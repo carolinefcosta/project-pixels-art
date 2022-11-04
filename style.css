@@ -15,15 +15,18 @@ body {
 
 #cor2 {
     height: 30px;
-    width: 50px; 
+    width: 50px;
+    background-color: rgb(250, 100, 125); 
 }
 
 #cor3 {
     height: 30px;
     width: 50px;
+    background-color: rgb(173, 79, 202);
 }
 
 #cor4 {
     height: 30px;
     width: 50px;
+    background-color: rgb(224, 49, 49);
 }

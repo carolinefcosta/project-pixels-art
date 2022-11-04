@@ -13,15 +13,10 @@ function corAleatoria() {
     return `rgba(${r}, ${g}, ${b})`;
 };
 
-corPreta.style.backgroundColor = 'black';
-cor2.style.backgroundColor = corAleatoria();
-cor3.style.backgroundColor = corAleatoria();
-cor4.style.backgroundColor = corAleatoria();
-
 botaoRandomColor.addEventListener('click', () => {
     const novaCor = document.getElementsByClassName('color');
-    for (let index in novaCor){
-        if (index === '0'){
+    for (let index = 0; index < novaCor.length; index += 1){
+        if (index === 0){
             novaCor[index].style.backgroundColor = 'black';
         } else {
             novaCor[index].style.backgroundColor = corAleatoria();

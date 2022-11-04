@@ -5,12 +5,12 @@ const cor4 = document.querySelector('#cor4');
 const botaoRandomColor = document.querySelector('#button-random-color');
 const classColors = document.getElementsByClassName('color');
 
-function corAleatoria(cor = 1) {
-    const r = Math.random() * 255;
-    const g = Math.random() * 255;
-    const b = Math.random() * 255;
+function corAleatoria() {
+    const r = Math.ceil(Math.random() * 255);
+    const g = Math.ceil(Math.random() * 255);
+    const b = Math.ceil(Math.random() * 255);
   
-    return `rgba(${r}, ${g}, ${b}, ${cor})`;
+    return `rgba(${r}, ${g}, ${b})`;
 };
 
 corPreta.style.backgroundColor = 'black';

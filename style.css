@@ -1,0 +1,29 @@
+body {
+    background-color: antiquewhite;
+}
+
+.color {
+    border: solid 1px black;
+    display: inline-block;
+}
+
+#corPreta {
+    background-color: black;
+    height: 30px;
+    width: 50px;
+}
+
+#cor2 {
+    height: 30px;
+    width: 50px; 
+}
+
+#cor3 {
+    height: 30px;
+    width: 50px;
+}
+
+#cor4 {
+    height: 30px;
+    width: 50px;
+}

@@ -30,3 +30,12 @@ body {
     width: 50px;
     background-color: rgb(224, 49, 49);
 }
+
+.pixel {
+    background-color: white;
+    border: black solid 1px;
+    display: inline-block; 
+    height: 40px;
+    width: 40px;
+    margin-bottom: -4px;
+}

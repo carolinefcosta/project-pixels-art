@@ -31,11 +31,15 @@ body {
     background-color: rgb(224, 49, 49);
 }
 
+#pixel-board {
+display: flex;
+flex-wrap: wrap;
+max-width: 17vw;
+
+}
 .pixel {
-    background-color: white;
-    border: black solid 1px;
-    display: inline-block; 
-    height: 40px;
-    width: 40px;
-    margin-bottom: -4px;
+  background-color: white;
+  border: black solid 1px; 
+  height: 40px;
+  width: 40px;
 }

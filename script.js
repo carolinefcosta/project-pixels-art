@@ -26,24 +26,7 @@ botaoRandomColor.addEventListener('click', () => {
     }
 });
 
-function salvandoLocalStorage () {
-    localStorage.setItem('colorPalette', sectionColorPallete.innerHTML);
-};
-
-function pegandoLocalStorage () {
-    const colorPalette = localStorage.getItem('colorPalette');
-    sectionColorPallete.innerHTML = colorPalette;
+for (let index = 0; index < 25; index += 1){
+    const cadaPixelLinha = document.createElement ('div');
+    sectionPixel.appendChild(cadaPixelLinha).className = 'pixel';
 }
-
-botaoRandomColor.addEventListener('click', salvandoLocalStorage());
-
-window.onload = () => {
-    pegandoLocalStorage();
-}
-
-for (let index = 1; index <= 5; index += 1){
-    const criandoQuadroPixel = document.createElement('p');
-    criandoQuadroPixel.className = 'pixel';
-    sectionPixel.appendChild(criandoQuadroPixel);
-}
-

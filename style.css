@@ -1,5 +1,6 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(238, 156, 201);
+    text-align: center;
 }
 
 .color {
@@ -16,27 +17,30 @@ body {
 #cor2 {
     height: 30px;
     width: 50px;
-    background-color: rgb(250, 100, 125); 
+    background-color: rgb(240, 41, 141); 
 }
 
 #cor3 {
     height: 30px;
     width: 50px;
-    background-color: rgb(210, 106, 241);
+    background-color: rgb(172, 29, 216);
 }
 
 #cor4 {
     height: 30px;
     width: 50px;
-    background-color: rgb(224, 49, 49);
+    background-color: rgb(206, 10, 92);
 }
 
 #pixel-board {
 display: flex;
 flex-wrap: wrap;
 max-width: 17vw;
-
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
 }
+
 .pixel {
   background-color: white;
   border: black solid 1px; 

@@ -5,7 +5,7 @@ const cor4 = document.querySelector('#cor4');
 const botaoRandomColor = document.querySelector('#button-random-color');
 const classColors = document.getElementsByClassName('color');
 const sectionColorPallete = document.querySelectorAll('#color-palette');
-const sectionPixel = document.querySelector('#pixel-board');
+const sectionPixelBoard = document.querySelector('#pixel-board');
 
 function corAleatoria() {
     const r = Math.ceil(Math.random() * 255);
@@ -27,6 +27,35 @@ botaoRandomColor.addEventListener('click', () => {
 });
 
 for (let index = 0; index < 25; index += 1){
-    const cadaPixelLinha = document.createElement ('div');
-    sectionPixel.appendChild(cadaPixelLinha).className = 'pixel';
+    const cadaPixel = document.createElement('div');
+    sectionPixelBoard.appendChild(cadaPixel).className = 'pixel';
 }
+
+const selected = document.getElementsByClassName('selected');
+
+function adcERemove (evento) {
+    if (selected !== 0){
+        evento.target.classList.remove('selected');
+    } else {
+        evento.target.classList.add('selected');
+    }
+}
+
+/*corPreta.addEventListener('click', (event) => {
+    event.target.classList.remove('selected');
+});
+corPreta.addEventListener('click', (event) => {
+    event.target.classList.add('selected');
+});
+
+cor2.addEventListener('click', (event) => {
+    event.target.classList.add('selected');
+});
+
+cor3.addEventListener('click', (event) => {
+    event.target.classList.add('selected');
+});
+
+cor4.addEventListener('click', (event) => {
+    event.target.classList.add('selected');
+});*/

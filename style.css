@@ -6,30 +6,12 @@ body {
 .color {
     border: solid 1px black;
     display: inline-block;
+    height: 30px;
+    width: 50px;
 }
 
 #corPreta {
     background-color: black;
-    height: 30px;
-    width: 50px;
-}
-
-#cor2 {
-    height: 30px;
-    width: 50px;
-    background-color: rgb(240, 41, 141); 
-}
-
-#cor3 {
-    height: 30px;
-    width: 50px;
-    background-color: rgb(172, 29, 216);
-}
-
-#cor4 {
-    height: 30px;
-    width: 50px;
-    background-color: rgb(206, 10, 92);
 }
 
 #pixel-board {

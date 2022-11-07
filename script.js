@@ -1,7 +1,11 @@
 const corPreta = document.querySelector('#corPreta');
-const cor2 = document.querySelector('#cor2');
-const cor3 = document.querySelector('#cor3');
-const cor4 = document.querySelector('#cor4');
+corPreta.style.backgroundColor = 'black';
+const corPink = document.querySelector('#corPink');
+corPink.style.backgroundColor = 'pink';
+const corPurple = document.querySelector('#corPurple');
+corPurple.style.backgroundColor = 'purple';
+const corPink2 = document.querySelector('#corPink2');
+corPink2.style.backgroundColor = 'violet';
 const botaoRandomColor = document.querySelector('#button-random-color');
 const color = document.getElementsByClassName('color');
 const colorPalette = document.querySelectorAll('#color-palette');
@@ -31,17 +35,6 @@ for (let index = 0; index < 25; index += 1){
     pixelBoard.appendChild(cadaPixel).className = 'pixel';
 }
 
-// function adicionaSelected (evento) {
-//     const classeSelected = document.querySelector('.selected');
-//     classeSelected.classList.remove('selected');
-//     evento.target.classList.add('selected');
-// }
-// corPreta.addEventListener('click', adicionaSelected);
-// cor2.addEventListener('click', adicionaSelected);
-// cor3.addEventListener('click', adicionaSelected);
-// cor4.addEventListener('click', adicionaSelected);
-
-
 const cores = document.querySelectorAll('.color');
 for (let index = 0; index < cores.length; index += 1) {
     cores[index].addEventListener('click', addSelected);
@@ -54,11 +47,16 @@ function addSelected (evento) {
 }
 
 // //DESAFIO 10
-// function pintandoPixel () {
-//     const pixelIndividual = document.getElementsByClassName('pixel');
-//     for (let index = 0; index < pixelIndividual.length; index += 1){
-//         pixelIndividual[index].addEventListener('click', () => {
-//             for (let i = 0; i < )
-//         })
-//     }
-// }
+
+function pintandoPixel (evento) {
+    const selecionado = document.querySelector('.selected');
+    evento.target.style.backgroundColor = selecionado.style.backgroundColor;
+}
+
+const pixelIndividual = document.querySelectorAll('.pixel');
+for (let index = 0; index < pixelIndividual.length; index += 1){
+    pixelIndividual[index].addEventListener('click', pintandoPixel); 
+}
+    
+
+

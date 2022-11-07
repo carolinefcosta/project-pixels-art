@@ -33,13 +33,15 @@ for (let index = 0; index < 25; index += 1){
 
 const selected = document.getElementsByClassName('selected');
 
-function adcERemove (evento) {
-    if (selected !== 0){
-        evento.target.classList.remove('selected');
-    } else {
-        evento.target.classList.add('selected');
-    }
+function addERmvClasseSelected (evento) {
+    const classeSelected = document.querySelector('.selected');
+    classeSelected.classList.remove('selected');
+    evento.target.classList.add('selected');
 }
+corPreta.addEventListener('click', addERmvClasseSelected);
+cor2.addEventListener('click', addERmvClasseSelected);
+cor3.addEventListener('click', addERmvClasseSelected);
+cor4.addEventListener('click', addERmvClasseSelected);
 
 /*corPreta.addEventListener('click', (event) => {
     event.target.classList.remove('selected');

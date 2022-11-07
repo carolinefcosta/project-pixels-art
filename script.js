@@ -3,9 +3,9 @@ const cor2 = document.querySelector('#cor2');
 const cor3 = document.querySelector('#cor3');
 const cor4 = document.querySelector('#cor4');
 const botaoRandomColor = document.querySelector('#button-random-color');
-const classColors = document.getElementsByClassName('color');
-const sectionColorPallete = document.querySelectorAll('#color-palette');
-const sectionPixelBoard = document.querySelector('#pixel-board');
+const color = document.getElementsByClassName('color');
+const colorPalette = document.querySelectorAll('#color-palette');
+const pixelBoard = document.querySelector('#pixel-board');
 
 function corAleatoria() {
     const r = Math.ceil(Math.random() * 255);
@@ -28,36 +28,37 @@ botaoRandomColor.addEventListener('click', () => {
 
 for (let index = 0; index < 25; index += 1){
     const cadaPixel = document.createElement('div');
-    sectionPixelBoard.appendChild(cadaPixel).className = 'pixel';
+    pixelBoard.appendChild(cadaPixel).className = 'pixel';
 }
 
-const selected = document.getElementsByClassName('selected');
+// function adicionaSelected (evento) {
+//     const classeSelected = document.querySelector('.selected');
+//     classeSelected.classList.remove('selected');
+//     evento.target.classList.add('selected');
+// }
+// corPreta.addEventListener('click', adicionaSelected);
+// cor2.addEventListener('click', adicionaSelected);
+// cor3.addEventListener('click', adicionaSelected);
+// cor4.addEventListener('click', adicionaSelected);
 
-function addERmvClasseSelected (evento) {
-    const classeSelected = document.querySelector('.selected');
-    classeSelected.classList.remove('selected');
+
+const cores = document.querySelectorAll('.color');
+for (let index = 0; index < cores.length; index += 1) {
+    cores[index].addEventListener('click', addSelected);
+}
+
+function addSelected (evento) {
+    const selecionado = document.querySelector('.selected');
+    selecionado.classList.remove('selected');
     evento.target.classList.add('selected');
 }
-corPreta.addEventListener('click', addERmvClasseSelected);
-cor2.addEventListener('click', addERmvClasseSelected);
-cor3.addEventListener('click', addERmvClasseSelected);
-cor4.addEventListener('click', addERmvClasseSelected);
 
-/*corPreta.addEventListener('click', (event) => {
-    event.target.classList.remove('selected');
-});
-corPreta.addEventListener('click', (event) => {
-    event.target.classList.add('selected');
-});
-
-cor2.addEventListener('click', (event) => {
-    event.target.classList.add('selected');
-});
-
-cor3.addEventListener('click', (event) => {
-    event.target.classList.add('selected');
-});
-
-cor4.addEventListener('click', (event) => {
-    event.target.classList.add('selected');
-});*/
+// //DESAFIO 10
+// function pintandoPixel () {
+//     const pixelIndividual = document.getElementsByClassName('pixel');
+//     for (let index = 0; index < pixelIndividual.length; index += 1){
+//         pixelIndividual[index].addEventListener('click', () => {
+//             for (let i = 0; i < )
+//         })
+//     }
+// }

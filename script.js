@@ -1,11 +1,11 @@
 const corPreta = document.querySelector('#corPreta');
 corPreta.style.backgroundColor = 'black';
 const corPink = document.querySelector('#corPink');
-corPink.style.backgroundColor = 'pink';
+corPink.style.backgroundColor = 'rgb(255,20,147)';
 const corPurple = document.querySelector('#corPurple');
-corPurple.style.backgroundColor = 'purple';
-const corPink2 = document.querySelector('#corPink2');
-corPink2.style.backgroundColor = 'violet';
+corPurple.style.backgroundColor = 'rgb(218,112,214)';
+const corLightBlue = document.querySelector('#corLightBlue');
+corLightBlue.style.backgroundColor = 'rgb(102,205,170)';
 const botaoRandomColor = document.querySelector('#button-random-color');
 const color = document.getElementsByClassName('color');
 const colorPalette = document.querySelectorAll('#color-palette');
@@ -46,8 +46,6 @@ function addSelected (evento) {
     evento.target.classList.add('selected');
 }
 
-// //DESAFIO 10
-
 function pintandoPixel (evento) {
     const selecionado = document.querySelector('.selected');
     evento.target.style.backgroundColor = selecionado.style.backgroundColor;
@@ -57,6 +55,13 @@ const pixelIndividual = document.querySelectorAll('.pixel');
 for (let index = 0; index < pixelIndividual.length; index += 1){
     pixelIndividual[index].addEventListener('click', pintandoPixel); 
 }
-    
+
+const clearBoard = document.getElementById('clear-board');
+clearBoard.addEventListener('click', () => {
+    const pixel = document.querySelectorAll('.pixel');
+    for (let index = 0; index < pixel.length; index += 1){
+        pixel[index].style.backgroundColor = 'white';
+    }
+});
 
 

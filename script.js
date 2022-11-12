@@ -10,6 +10,8 @@ const botaoRandomColor = document.querySelector('#button-random-color');
 const color = document.getElementsByClassName('color');
 const colorPalette = document.querySelectorAll('#color-palette');
 const pixelBoard = document.querySelector('#pixel-board');
+const botaoPixels = document.querySelector('#generate-board');
+const input = document.getElementById('board-size');
 
 function corAleatoria() {
     const r = Math.ceil(Math.random() * 255);
@@ -64,4 +66,30 @@ clearBoard.addEventListener('click', () => {
     }
 });
 
+function criandoMaisDivs () {
+    if (input.value === '') {
+        alert('Board inválido!')
+    }
+    if (input.value < 5) {
+        input.value = 5;
+    }
+    if(input.value > 50) {
+        input.value = 50;
+    }
+    const numeroPixels = input.value * input.value;
+    pixelBoard.style.width = `${input.value * 42}px`;
+    const pixels = document.querySelectorAll('.pixel');
+    if (pixels.length !== 0) {
+        for (let index = 0; index < pixels.length; index += 1) {
+            pixelBoard.removeChild(pixels[index]);
+        }
+    }
+    for (let linhas = 1; linhas <=numeroPixels; linhas += 1) {
+        const pixel = document.createElement('div');
+        pixel.className = 'pixel';
+        pixelBoard.appendChild(pixel);
+    }
+}
+
+botaoPixels.addEventListener('click', criandoMaisDivs);
 

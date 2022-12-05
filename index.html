@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Pixels Art</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Paleta de Cores</h1>
+    </header>
+    <main>
+        <section id="color-palette">
+            <p class="color selected" id="corPreta"></p>
+            <p class="color" id="corPink"></p>
+            <p class="color" id="corPurple"></p>
+            <p class="color" id="corLightBlue"></p>
+        </section>
+        <button id="button-random-color" class="btn btn-dark">Cores aleatórias</button>
+        <button id="clear-board" class="btn btn-dark">Limpar</button>
+        <section class="input-botao">
+            <input type="number" name="" id="board-size" min="1" max="50">
+            <button type="submit" id="generate-board" class="btn btn-dark">VQV</button>
+        </section>
+        <section id="pixel-board"></section>
+        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

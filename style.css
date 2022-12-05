@@ -1,0 +1,46 @@
+body {
+    background-image: url("fundo.jpg");
+    
+    background-size: 50%;
+    text-align: center;
+}
+
+#title{
+    color: white;
+    background-color: black;
+}
+
+.color {
+    border: solid 1px black;
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+}
+
+#corPreta {
+    background-color: black;
+}
+
+#pixel-board {
+display: flex;
+flex-wrap: wrap;
+max-width: 17vw;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+}
+
+.pixel {
+  background-color: white;
+  border: black solid 1px; 
+  height: 40px;
+  width: 40px;
+}
+
+.input-botao {
+    margin-top: 10px;
+}
+
+#board-size{
+    width: 100px;
+}

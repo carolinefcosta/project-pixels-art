@@ -1,10 +1,18 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## 💻 Projeto
+
+Projeto desenvolvido no módulo de fundamentos do curso da [Trybe](https://www.betrybe.com/), no qual foi criado uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.
+
+## 🚀 Tecnologias usadas
+
+- HTML
+- CSS
+- Javascript
+
+## 📌 Habilidades desenvolvidas
+
+Nesse projeto, fui capaz de:
+
+- Manipular o DOM
+- Manipular o Javascript
+
+![image](https://user-images.githubusercontent.com/115182342/220604302-040becc8-9cf8-45e7-9033-ec3dc8ab11fe.png)
